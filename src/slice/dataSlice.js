@@ -2,7 +2,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const url = 'http://localhost:8000/api/referrals'
+const url = 'https://accredian-backend-task-n40d.onrender.com/api/referrals'
 
 // Async action to send data to the backend
 export const sendData = createAsyncThunk('data/sendData', async (formData, { rejectWithValue }) => {
